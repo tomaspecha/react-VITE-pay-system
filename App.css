@@ -1,0 +1,76 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-header {
+  background-color: #0078d4;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.count-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.count-button:hover {
+  background-color: #005a9e;
+}
+
+.app-footer {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+// index.css
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+

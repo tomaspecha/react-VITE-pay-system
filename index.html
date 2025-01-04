@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS | Virunum Toll Payment System</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="App.css" />
+    <meta name="description" content="A modern toll payment system application built with Vite, React, and TypeScript." />
+    <meta name="author" content="Your Name" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Toll Payment, React, Vite, TypeScript, Modern UI" />
+</head>
+<body>
+<div id="tollApp">
+    <header>
+        <h1>Virunum Toll Payment</h1>
+    </header>
+    <main>
+        <label for="tollCategory">Select Toll Category:</label>
+        <select id="tollCategory" onchange="updateCostDisplay()">
+            <option value="">--Select a Category--</option>
+            <option value="1 As">Single person, light load</option>
+            <option value="2 As">Single person, heavy load</option>
+            <option value="1 Dupondius, 1 As">Single person, hand-drawn cart</option>
+            <option value="2 Dupondius">1 horse + rider</option>
+            <option value="3 Dupondius">Horse-drawn cart, 1 horse</option>
+            <option value="4 Dupondius">Horse-drawn cart, 2–3 horses</option>
+            <option value="1 Denarius">Horse-drawn cart, 4–5 horses</option>
+            <option value="1 Denarius, 2 Sestertius">Horse-drawn cart, 6 horses</option>
+        </select>
+
+        <div id="costDisplay">Cost: <span id="costAmount">Please select a category.</span></div>
+
+        <form id="paymentForm">
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="text" id="cardNumber" placeholder="Card Number" required><br>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tomas P Payment System. All Rights Reserved.</p>
+    </footer>
+</div>
+
+<script>
+    function updateCostDisplay() {
+        const tollCategory = document.getElementById('tollCategory').value;
+        document.getElementById('costAmount').textContent = tollCategory || "Please select a category.";
+    }
+
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Payment data submitted. Thank you!');
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

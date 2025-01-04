@@ -1,0 +1,84 @@
+/* Basic reset to ensure consistent styling across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML styling for full-height layout and centralized content */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /*  background color */
+}
+
+/* Styling for the main application container */
+#tollApp {
+    background-color: #f5dddd; /*  background color for the app */
+    padding: 2rem; /* Padding for spacing inside the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    text-align: center; /* Center-align text */
+}
+
+/* Header (h1) styling for emphasis */
+h1 {
+    color: #27a82b; /*  color for header text */
+    margin-bottom: 1rem; /* Bottom margin for spacing */
+}
+
+/* Consistent styling for form elements */
+label, select, #costDisplay, form {
+    width: 100%; /* Full width for form elements */
+    margin-bottom: 1rem; /* Bottom margin for spacing */
+    color: rgb(12, 12, 11); /* White text for contrast */
+}
+
+/* Styling for select dropdown and text inputs */
+select, input[type="text"] {
+    padding: 0.5rem; /* Padding for better readability */
+    border: 1px solid #ccc; /* Grey border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Standard font size */
+}
+
+/* Button styling for interactivity */
+button {
+    background-color: #4caf50; /* background for buttons */
+    color: white; /* White text for contrast */
+    padding: 0.75rem 1.5rem; /* Padding for size */
+    border: none; /* No border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Standard font size */
+    margin-top: 1rem; /* Top margin for spacing */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #3f4e40; /* color on hover */
+}
+
+/* Cost display styling for emphasis */
+#costDisplay {
+    font-weight: bold; /* Bold font for visibility */
+    padding: 0.5rem; /* Padding for size */
+    border: 1px solid #643737; /* Grey border for visibility */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+}
+
+
+
+
+
+
+
+
+
+
+
